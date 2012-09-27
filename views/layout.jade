@@ -1,0 +1,25 @@
+doctype 5
+html
+	head
+		meta(charset='utf-8')
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/resources/bootstrap/css/bootstrap.min.css')
+	body
+		div.navbar.navbar-inverse.navbar-fixed-top
+			div.navbar-inner
+				div.container
+					button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.brand(href='./?a=1') jijili 
+					div.nav-collapse.collapse
+						ul.nav
+							li.active
+								a(href='./?a=2') Home
+							li
+								a(href='./?a=3') Get started
+		block content
+		script(src='javascripts/jquery-1.8.1.min.js')
+		script(src='resources/bootstrap/js/bootstrap.js')
